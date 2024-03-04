@@ -22,9 +22,11 @@ To run the application on the local development server, use the following comman
 
 ```bash
 npm start
+```
 or
 ```bash
 ng serve
+```
 
 Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
@@ -32,4 +34,4 @@ Navigate to `http://localhost:4200/`. The application will automatically reload 
 
 ```bash
 npm run build -- --configuration production
-
+```
