@@ -1,0 +1,58 @@
+<!-- By using the absolute class, the component gains independence on the page, we push the component half as far left and half as far up, so that it is literally centered on the page.  -->
+<section
+  class="w-full h-full flex flex-col items-center justify-center md:p-0 p-3 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+>
+  @if (showSnackBar) {
+  <div
+    class="max-w-sm block p-2 bg-red-500/40 text-white rounded-md absolute top-10 left-1/2 -translate-x-1/2"
+  >
+    {{ errorMessage }}
+  </div>
+  }
+  <div
+    class="p-6 bg-gray-800 rounded-md max-w-md w-full flex flex-col items-center"
+  >
+    <h1 class="text-4xl mb-8">Sign <span class="text-yellow-500">up</span></h1>
+
+    <form [formGroup]="form" (ngSubmit)="onSubmit()" class="w-full max-w-xs">
+      <div class="mb-4">
+        <input
+          type="text"
+          placeholder="Username"
+          formControlName="username"
+          class="w-full bg-transparent border border-gray-500 focus:border-yellow-500 py-2 px-3 rounded-md outline-none"
+        />
+      </div>
+      <div class="mb-4">
+        <input
+          type="text"
+          placeholder="Email"
+          formControlName="email"
+          class="w-full bg-transparent border border-gray-500 focus:border-yellow-500 py-2 px-3 rounded-md outline-none"
+        />
+      </div>
+      <div class="mb-6">
+        <input
+          type="password"
+          placeholder="Password"
+          formControlName="password"
+          class="w-full bg-transparent border border-gray-500 focus:border-yellow-500 py-2 px-3 rounded-md outline-none mb-2"
+        />
+        <small
+          >Have an account?
+          <a routerLink="/login" class="text-yellow-500 ml-1 font-semibold"
+            >Sign in</a
+          ></small
+        >
+      </div>
+      <div>
+        <button
+          type="submit"
+          class="px-4 py-2 bg-yellow-500 rounded-md block ml-auto hover:bg-yellow-600"
+        >
+          Sign up
+        </button>
+      </div>
+    </form>
+  </div>
+</section>

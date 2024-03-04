@@ -1,0 +1,38 @@
+[
+  { 
+    "name": "CommandPost", 
+    "image": "assets/images/commandpost.png"
+  },
+  { 
+    "name": "Evan You", 
+    "image": "assets/images/evanyou.jpeg"
+  },
+  { 
+    "name": "ESLint", 
+    "image": "assets/images/eslint.png"
+  },
+  { 
+    "name": "Nikema", 
+    "image": "assets/images/nikema.jpeg"
+  },
+  { 
+    "name": "Homebrew", 
+    "image": "assets/images/homebrew.png"
+  },
+  { 
+    "name": "Samuel", 
+    "image": "assets/images/samuel.jpeg"
+  },
+  { 
+    "name": "kazuya kawaguchi", 
+    "image": "assets/images/kuzuyakawaguchi.jpeg" 
+  },
+  { 
+    "name": "sinderhous", 
+    "image": "assets/images/sindresorhus.jpeg" 
+  },
+  { 
+    "name": "Directus", 
+    "image": "assets/images/directus.png" 
+  }
+]
