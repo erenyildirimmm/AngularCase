@@ -9,7 +9,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 
 const firebaseConfig = {
 
-  apiKey: "APİ_KEY",
+  apiKey: "API_KEY",
 
   authDomain: "angular-case-f0cbc.firebaseapp.com",
 
